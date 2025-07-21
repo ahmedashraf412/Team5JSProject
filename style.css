@@ -1,0 +1,33 @@
+.partOne{
+    padding-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+.text{
+    text-align: left;
+    margin-right: 5%;
+
+}
+.text>p{
+    text-align: left;
+    flex-wrap: wrap;
+    font-family: Poppins-Light;
+    font-size: 14px;
+    line-height: 1.7857;
+}
+
+.img{
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid gray;
+    justify-content: left;
+
+}
+.img>img{
+    width: 100%;
+    height: 100%;
+}
