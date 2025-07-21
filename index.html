@@ -6,76 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 </head>
-<div class="top-bar">
-    <div class="top-bar-content-container">
-        <div class="top-bar-left">Free shipping for standard order over $100</div>
-        <div class="top-bar-links">
-            <a href="#">Help & FAQs</a>
-            <a href="#">My Account</a>
-            <a href="#">EN</a>
-            <a href="#">USD</a>
-        </div>
-    </div>
-</div>
-<div class="sticky-navbar">
-    <div class="logo-container">
-        <img src="" #" alt="logo" class="logo">
-    </div>
-    <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Features</a>
-        <a href="#">Blog</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </div>
-    <div class="nav-icons">
-        <button id="search-icon"><img src="" alt="search-icon"></button>
-        <button id="cart-icon"><img src="" alt="cart-icon"></button>
-        <button id="fav-icon"><img src="" alt="fav-icon"></button>
-    </div>
 
-
-</div>
-<div class="hero-section">
-    <h3>Men New-Season</h3>
-    <h1>JACKETS & COATS</h1>
-    <button id="shop-now">SHOP NOW</button>
-    <button id="slider-left-btn"><img src="#" alt="slider-left-btn"></button>
-    <button id="slider-right-btn"><img src="#" alt="slider-right-btn"></button>
-
-</div>
-<div class="container">
-    <div class="categories">
-        <div>Women</div>
-        <div>Men</div>
-        <div>Accesories</div>
-    </div>
-    <div class="products">
-        <h2>PRODUCT OVERVIEW</h2>
-        <div class="products-categories">
-            <div class="products-categories-btn">
-                <button>All Products</button>
-                <button>Women</button>
-                <button>Men</button>
-                <button>Bag</button>
-                <button>Shoes</button>
-                <button>Watches</button>
-            </div>
-            <div class="products-filter">
-                <button id="product-filter-btn">Filter</button>
-                <button id="product-search-btn">Search</button>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-content-container">
+            <div class="top-bar-left">Free shipping for standard order over $100</div>
+            <div class="top-bar-links">
+                <a href="#">Help & FAQs</a>
+                <a href="#">My Account</a>
+                <a href="#">EN</a>
+                <a href="#">USD</a>
             </div>
         </div>
-        <div class="products-list">
-            <div class="product-card"></div>
-        </div>
-        <button id="load-more-btn">LOAD MORE</button>
     </div>
-</div>
-<div class="footer">
-    <div class="footer-content">
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="./assets/logo-01.png.webp" alt="logo" class="logo">
+            </div>
+            <div class="nav-links">
+                <ul class="nav-list">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-icons">
+                <button id="search-icon" class="zmdi zmdi-search"></button>
+                <button id="cart-icon" class="zmdi zmdi-shopping-cart"></button>
+                <button id="fav-icon" class="zmdi zmdi-favorite-outline"></button>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="hero-section">
+        <button id="slider-left-btn" class="zmdi zmdi-caret-left"></button>
+        <button id="slider-right-btn" class="zmdi zmdi-caret-right"></button>
+        <div class="hero-section-container">
+            <div class="hero-section-content">
+                <h3>Men New-Season</h3>
+                <h1>JACKETS & COATS</h1>
+                <button id="shop-now">SHOP NOW</button>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="categories">
+            <div>Women</div>
+            <div>Men</div>
+            <div>Accesories</div>
+        </div>
+        <div class="products">
+            <h2>PRODUCT OVERVIEW</h2>
+            <div class="products-categories">
+                <div class="products-categories-btn">
+                    <button>All Products</button>
+                    <button>Women</button>
+                    <button>Men</button>
+                    <button>Bag</button>
+                    <button>Shoes</button>
+                    <button>Watches</button>
+                </div>
+                <div class="products-filter">
+                    <button id="product-filter-btn">Filter</button>
+                    <button id="product-search-btn">Search</button>
+                </div>
+            </div>
+            <div class="products-list">
+                <div class="product-card"></div>
+            </div>
+            <button id="load-more-btn">LOAD MORE</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div>
+                <h4>CATEGORIES</h4>
+                <p>Women</p>
+                <p>Men</p>
+                <p>Shoes</p>
+                <p>Watches</p>
+            </div>
+            <div>
+                <h4>HELP</h4>
+                <p>Track Order</p>
+                <p>Returns</p>
+                <p>Shipping</p>
+                <p>FAQs</p>
+            </div>
+            <div>
+                <h4>GET IN TOUCH</h4>
+                <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on
+                    (+1) 96
+                    716 6879</p>
+                <div class="footer-social-icons">
+                    <img src="#" alt="facebook-icon">
+                    <img src="#" alt="instagram-icon">
+                    <img src="#" alt="pinterest-icon">
+                </div>
+            </div>
+            <div>
+                <h4>NEWSLETTER</h4>
+                <p>email@cample.com</p>
+                <div class="footer-break-line"></div>
+                <button id="footer-subscribe-btn">SUBSCRIBE</button>
+            </div>
+            <div class="footer-payment-icons">
+                <img src="" alt="Paypal-icon">
+                <img src="" alt="Visa-icon">
+                <img src="" alt="MasterCard-icon">
+                <img src="" alt="pay-icon">
+                <img src="" alt="pay-icon">
+            </div>
+            <p class="copy-rights">Copyright ©2025 All rights reserved | This template is made with<span><img src="#"
+                        alt="heart-icon"></span> by Colorlib</p>
+
+        </div>
+
+
+
         <div>
             <h4>CATEGORIES</h4>
             <p>Women</p>
@@ -91,36 +149,50 @@
             <p>FAQs</p>
         </div>
         <div>
-            <h4>GET IN TOUCH</h4>
-            <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96
-                716 6879</p>
-            <div class="footer-social-icons">
-                <img src="#" alt="facebook-icon">
-                <img src="#" alt="instagram-icon">
-                <img src="#" alt="pinterest-icon">
-            </div>
+            <h4>CATEGORIES</h4>
+            <p>Women</p>
+            <p>Men</p>
+            <p>Shoes</p>
+            <p>Watches</p>
         </div>
         <div>
-            <h4>NEWSLETTER</h4>
-            <p>email@cample.com</p>
-            <div class="footer-break-line"></div>
-            <button id="footer-subscribe-btn">SUBSCRIBE</button>
+            <h4>HELP</h4>
+            <p>Track Order</p>
+            <p>Returns</p>
+            <p>Shipping</p>
+            <p>FAQs</p>
         </div>
-        <div class="footer-payment-icons">
-            <img src="" alt="Paypal-icon">
-            <img src="" alt="Visa-icon">
-            <img src="" alt="MasterCard-icon">
-            <img src="" alt="pay-icon">
-            <img src="" alt="pay-icon">
+        <div>
+            <h4>CATEGORIES</h4>
+            <p>Women</p>
+            <p>Men</p>
+            <p>Shoes</p>
+            <p>Watches</p>
         </div>
-        <p class="copy-rights">Copyright ©2025 All rights reserved | This template is made with<span><img src="#"
-                    alt="heart-icon"></span> by Colorlib</p>
-
+        <div>
+            <h4>HELP</h4>
+            <p>Track Order</p>
+            <p>Returns</p>
+            <p>Shipping</p>
+            <p>FAQs</p>
+        </div>
+        <div>
+            <h4>CATEGORIES</h4>
+            <p>Women</p>
+            <p>Men</p>
+            <p>Shoes</p>
+            <p>Watches</p>
+        </div>
+        <div>
+            <h4>HELP</h4>
+            <p>Track Order</p>
+            <p>Returns</p>
+            <p>Shipping</p>
+            <p>FAQs</p>
+        </div>
     </div>
-</div>
 
-<body>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
