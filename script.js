@@ -82,6 +82,28 @@ function prev() {
 
 updateSlide();
 
+
+var backToTopBtn = document.querySelector('.back-to-top');
+
+
+backToTopBtn.classList.add('hidden');
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 300) {
+        backToTopBtn.classList.remove('hidden');
+    } else {
+        backToTopBtn.classList.add('hidden');
+    }
+});
+
+
+backToTopBtn.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
 var productReq = new XMLHttpRequest()
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar')
@@ -104,7 +126,10 @@ productReq.onreadystatechange = () => {
         for (var i = 0; i < finalProducts.products.length; i++) {
             document.querySelector(".products-list").innerHTML += `
                 <div class="product-card">
-                        <div class="product-img"><img src="./assets/${finalProducts.products[i].image}" alt=""></div>
+                        <div class="product-img">
+                        <img src="./assets/${finalProducts.products[i].image}" alt="">
+                        <a href"#" id="${finalProducts.products[i].id}" >Quick View</a>
+                        </div>
                         <div class="product-details">
                             <div class="product-name">
                                 <span>${finalProducts.products[i].title}</span>

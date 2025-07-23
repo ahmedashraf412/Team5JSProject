@@ -773,3 +773,72 @@
  .payment-container {
      padding-bottom: 18px;
  }
+
+ .product-img {
+     position: relative;
+ }
+
+ .product-img a {
+     position: absolute;
+     width: 139px;
+     height: 46px;
+     line-height: 22px;
+     color: #333;
+     bottom: -50px;
+     left: 50%;
+     transform: translateX(-50%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0px 15px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background-color: white;
+     border-radius: 20px;
+ }
+
+ .product-img:hover a {
+     bottom: 20px;
+     height: 40px;
+ }
+
+ .product-img a:hover {
+     background-color: #222;
+     color: #fff;
+ }
+
+ .product-img:hover img {
+     transform: scale(1.1);
+ }
+
+ .back-to-top {
+     position: fixed;
+     width: 40px;
+     height: 38px;
+     bottom: 0px;
+     right: 40px;
+     background-color: #717fe0;
+     opacity: 0.5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 100;
+     cursor: pointer;
+     transition: all 0.4s;
+ }
+
+ .back-to-top:hover {
+     opacity: 1;
+ }
+
+ .back-to-top span {
+     font-size: 25px;
+     color: white;
+     line-height: 25px;
+
+ }
+
+ .back-to-top.hidden {
+     opacity: 0;
+     visibility: hidden;
+ }
